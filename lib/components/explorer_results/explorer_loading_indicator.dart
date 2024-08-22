@@ -16,11 +16,11 @@ class ExplorerLoadingIndicator extends StatelessWidget {
       Observer(builder: (context) {
         if ((expStore.pendingRequests != 0) &&
             (expStore.networkOverview != null)) {
-          return SizedBox(
+          return const SizedBox(
               width: 10,
               height: 10,
               child: GradientForeground(
-                  child: const CircularProgressIndicator(
+                  child: CircularProgressIndicator(
                       strokeWidth: 2,
                       color: LightThemeColors.buttonBackground)));
         }

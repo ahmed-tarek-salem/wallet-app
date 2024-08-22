@@ -221,7 +221,7 @@ class _SendState extends State<Send> {
         isScrollControlled: true,
         builder: (BuildContext context) {
           return SafeArea(
-              child: Container(
+              child: SizedBox(
             height: 400,
             child: Center(
                 child: Padding(

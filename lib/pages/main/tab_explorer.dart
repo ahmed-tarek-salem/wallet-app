@@ -107,8 +107,8 @@ class _TabExplorerState extends State<TabExplorer> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          GradientForeground(
-              child: const Icon(
+          const GradientForeground(
+              child: Icon(
             Icons.account_tree,
             size: 100,
           )),
@@ -120,7 +120,7 @@ class _TabExplorerState extends State<TabExplorer> {
             } else {
               return FilledButton.icon(
                   style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
+                      backgroundColor: WidgetStateProperty.all(
                           LightThemeColors.buttonBackground)),
                   onPressed: () async {
                     refreshOverview();
@@ -173,15 +173,15 @@ class _TabExplorerState extends State<TabExplorer> {
             ),
             activeBtnStyle: ButtonStyle(
               backgroundColor:
-                  MaterialStateProperty.all(LightThemeColors.primary),
-              shape: MaterialStateProperty.all(
+                  WidgetStateProperty.all(LightThemeColors.primary),
+              shape: WidgetStateProperty.all(
                 RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40),
                 ),
               ),
             ),
             inactiveBtnStyle: ButtonStyle(
-              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+              shape: WidgetStateProperty.all(RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(40),
               )),
             ),
@@ -280,7 +280,7 @@ class _TabExplorerState extends State<TabExplorer> {
 
             StickyHeader(
                 header: Container(
-                    color: Theme.of(context).colorScheme.background,
+                    color: Theme.of(context).colorScheme.surface,
                     child: Padding(
                         padding: const EdgeInsets.fromLTRB(
                             0,

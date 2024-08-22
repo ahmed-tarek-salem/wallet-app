@@ -553,7 +553,7 @@ class _SignInState extends State<SignIn>
       padding: const EdgeInsets.all(
         ThemePaddings.bigPadding,
       ),
-      child: Container(
+      child: SizedBox(
           width: double.infinity,
           child: Padding(
               padding: EdgeInsets.only(

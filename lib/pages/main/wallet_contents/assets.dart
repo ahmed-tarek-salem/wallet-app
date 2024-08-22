@@ -63,7 +63,9 @@ class _AssetsState extends State<Assets> {
     List<Widget> output = [];
     output.add(
         Text(l10n.assetsLabelQXAssets, style: TextStyles.sliverCardPreLabel));
-    qxAssets.forEach((element) => output.add(getAssetEntry(element)));
+    for (var element in qxAssets) {
+      output.add(getAssetEntry(element));
+    }
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start, children: output);
   }
@@ -82,7 +84,9 @@ class _AssetsState extends State<Assets> {
 
     output.add(Text(l10n.assetsLabelSmartContractShares,
         style: TextStyles.sliverCardPreLabel));
-    scAssets.forEach((element) => output.add(getAssetEntry(element)));
+    for (var element in scAssets) {
+      output.add(getAssetEntry(element));
+    }
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start, children: output);
   }

@@ -1,4 +1,3 @@
-import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
@@ -222,7 +221,7 @@ class _TransferAssetState extends State<TransferAsset> {
         isScrollControlled: true,
         builder: (BuildContext context) {
           return SafeArea(
-              child: Container(
+              child: SizedBox(
             height: 400,
             child: Center(
                 child: Padding(

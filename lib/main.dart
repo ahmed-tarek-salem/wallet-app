@@ -1,5 +1,4 @@
 import 'package:dargon2_flutter/dargon2_flutter.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';

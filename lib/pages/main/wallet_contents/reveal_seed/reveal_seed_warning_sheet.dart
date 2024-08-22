@@ -105,7 +105,7 @@ class _RevealSeedWarningSheetState extends State<RevealSeedWarningSheet> {
   Widget build(BuildContext context) {
     final l10n = l10nOf(context);
 
-    return Container(
+    return SizedBox(
         width: double.infinity,
         child: Padding(
             padding: ThemeEdgeInsets.bottomSheetInsets,

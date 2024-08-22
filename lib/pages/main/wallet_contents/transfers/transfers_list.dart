@@ -64,7 +64,7 @@ class _TransfersListState extends State<TransfersList> {
                               style: Theme.of(context).textTheme.bodyMedium!),
                           const SizedBox(height: ThemePaddings.miniPadding),
                           Builder(builder: (context) {
-                            return Container(
+                            return SizedBox(
                                 width: double.infinity,
                                 child: Card(
                                     child: Padding(

@@ -35,12 +35,12 @@ class TransactionResend extends StatelessWidget {
           return element.publicId == id;
         });
         if (source != null) {
-          return Container(
+          return SizedBox(
               width: double.infinity,
               child: Text(l10n.generalLabelToFromAccount(prepend, source.name),
                   style: TextStyles.labelText));
         }
-        return Container(
+        return SizedBox(
             width: double.infinity,
             child: Text(l10n.generalLabelToFromAddress(prepend),
                 textAlign: TextAlign.start,
@@ -90,7 +90,7 @@ class TransactionResend extends StatelessWidget {
           const SizedBox(height: ThemePaddings.smallPadding),
           getFromTo(context, l10n.generalLabelTo, item.destId),
           const SizedBox(height: ThemePaddings.smallPadding),
-          Container(
+          SizedBox(
               width: double.infinity,
               child: Text(l10n.sendItemLabelTargetTick,
                   textAlign: TextAlign.start, style: TextStyles.labelText)),

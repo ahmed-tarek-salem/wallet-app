@@ -158,7 +158,7 @@ class _ManageBiometricsState extends State<ManageBiometrics> {
       //Theme.of(context).cardTheme.color,
       settingsListBackground: LightThemeColors.background,
       dividerColor: Colors.transparent,
-      titleTextColor: Theme.of(context).colorScheme.onBackground,
+      titleTextColor: Theme.of(context).colorScheme.onSurface,
     );
     return Column(children: [
       const SizedBox(height: ThemePaddings.hugePadding),

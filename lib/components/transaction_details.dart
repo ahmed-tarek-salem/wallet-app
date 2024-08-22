@@ -90,13 +90,13 @@ class TransactionDetails extends StatelessWidget {
             return element.publicId == id;
           });
           if (source != null) {
-            return Container(
+            return SizedBox(
                 width: double.infinity,
                 child: Text("$prepend wallet ID \"${source.name}\"",
                     textAlign: TextAlign.start,
                     style: TextStyles.lightGreyTextSmallBold));
           }
-          return Container(
+          return SizedBox(
               width: double.infinity,
               child: Text("$prepend address",
                   textAlign: TextAlign.start,
@@ -116,12 +116,12 @@ class TransactionDetails extends StatelessWidget {
     return Flex(direction: Axis.horizontal, children: [
       Expanded(
           child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
-        Container(
+        SizedBox(
             width: double.infinity,
-            child: Text("$text",
+            child: Text(text,
                 textAlign: TextAlign.start,
                 style: TextStyles.lightGreyTextSmallBold)),
-        Container(
+        SizedBox(
             width: double.infinity,
             child: Text(value,
                 textAlign: TextAlign.start, style: TextStyles.textNormal))
@@ -158,7 +158,7 @@ class TransactionDetails extends StatelessWidget {
                           ),
                           ThemedControls.spacerVerticalNormal(),
                           TransactionStatusItem(item: item),
-                          Container(
+                          SizedBox(
                               width: double.infinity,
                               child: FittedBox(
                                 child: CopyableText(

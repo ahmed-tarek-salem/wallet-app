@@ -176,8 +176,7 @@ class _TransactionsForIdState extends State<TransactionsForId> {
                           Observer(builder: (context) {
                             List<Widget> results = [];
                             int added = 0;
-                            appStore.currentTransactions.reversed
-                                .forEach((tran) {
+                            for (var tran in appStore.currentTransactions.reversed) {
                               bool matchesItem =
                                   true; //If this widget has a specific item, only show transactions that involve that item
                               if (widget.item != null) {
@@ -198,7 +197,7 @@ class _TransactionsForIdState extends State<TransactionsForId> {
                                 results.add(const SizedBox(
                                     height: ThemePaddings.normalPadding));
                               }
-                            });
+                            }
                             if (added == 0) {
                               results.add(getEmptyTransactionsForSingleID(
                                   context: context,

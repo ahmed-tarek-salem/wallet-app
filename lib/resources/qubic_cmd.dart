@@ -1,8 +1,6 @@
 import 'dart:convert';
 import 'dart:typed_data';
-import 'package:flutter/material.dart';
 import 'package:qubic_wallet/globals/localization_manager.dart';
-import 'package:qubic_wallet/l10n/l10n.dart';
 import 'package:qubic_wallet/models/qubic_import_vault_seed.dart';
 import 'package:qubic_wallet/models/qubic_vault_export_seed.dart';
 import 'package:qubic_wallet/resources/qubic_cmd_utils.dart';

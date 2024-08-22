@@ -48,7 +48,7 @@ class ExplorerResultPageTickHeader extends StatelessWidget {
                 bottom: ThemePaddings.normalPadding),
             child: Column(children: [
               Text(l10n.generalLabelTick, style: TextStyles.textSmall),
-              Container(
+              SizedBox(
                   width: double.infinity,
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

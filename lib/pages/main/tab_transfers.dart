@@ -139,12 +139,12 @@ class _TabTransfersState extends State<TabTransfers> {
                         }
                         List<TransactionVm> filteredResults = [];
 
-                        appStore.currentTransactions.reversed.forEach((tran) {
+                        for (var tran in appStore.currentTransactions.reversed) {
                           if ((appStore.transactionFilter == null) ||
                               (appStore.transactionFilter!.matchesVM(tran))) {
                             filteredResults.add(tran);
                           }
-                        });
+                        }
                         if (filteredResults.isEmpty) {
                           return SliverList(
                               delegate: SliverChildListDelegate([

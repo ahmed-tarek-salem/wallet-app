@@ -43,7 +43,7 @@ class _JoinCommunityState extends State<JoinCommunity> {
       //Theme.of(context).cardTheme.color,
       settingsListBackground: LightThemeColors.background,
       dividerColor: Colors.transparent,
-      titleTextColor: Theme.of(context).colorScheme.onBackground,
+      titleTextColor: Theme.of(context).colorScheme.onSurface,
     );
 
     return Padding(
@@ -111,8 +111,8 @@ class _JoinCommunityState extends State<JoinCommunity> {
                   ),
                   SettingsTile.navigation(
                     leading: const ChangeForeground(
-                        child: Icon(FontAwesomeIcons.github),
-                        color: LightThemeColors.gradient1),
+                        color: LightThemeColors.gradient1,
+                        child: Icon(FontAwesomeIcons.github)),
                     title: Text(l10n.joinCommunityLabelGitHub,
                         style: TextStyles.textNormal),
                     trailing: Container(),

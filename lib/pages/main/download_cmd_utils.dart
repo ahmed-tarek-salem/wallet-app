@@ -37,7 +37,7 @@ class _DownloadCmdUtilsState extends State<DownloadCmdUtils> {
   String? manualError;
 
   num downloadProgress = 0;
-  String? downloadError = null;
+  String? downloadError;
 
   @override
   void initState() {

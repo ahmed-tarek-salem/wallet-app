@@ -7,8 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 class AvailableUpdateCard extends StatelessWidget {
   final UpdateDetailsDto updateDetails;
 
-  const AvailableUpdateCard({Key? key, required this.updateDetails})
-      : super(key: key);
+  const AvailableUpdateCard({super.key, required this.updateDetails});
 
   Widget getButtonBar(BuildContext context) {
     if (updateDetails.url == null) {
@@ -26,9 +25,9 @@ class AvailableUpdateCard extends StatelessWidget {
             // Perform some action
             var url = updateDetails.url!
                 .replaceAll(":", "")
-                .replaceAll("\:", "")
-                .replaceAll("\[github\]", "https://github.com/Qubic-Hub/");
-            url = url.replaceAll("\[qubichub\]", "https://www.qubic-hub.com/");
+                .replaceAll(":", "")
+                .replaceAll("[github]", "https://github.com/Qubic-Hub/");
+            url = url.replaceAll("[qubichub]", "https://www.qubic-hub.com/");
 
             launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
           },

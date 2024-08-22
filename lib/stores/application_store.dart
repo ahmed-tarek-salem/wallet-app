@@ -85,7 +85,7 @@ abstract class _ApplicationStore with Store {
   List<QubicAssetDto> get totalShares {
     List<QubicAssetDto> shares = [];
     List<QubicAssetDto> tokens = [];
-    currentQubicIDs.forEach((id) {
+    for (var id in currentQubicIDs) {
       id.assets.forEach((key, asset) {
         QubicAssetDto temp = asset.clone();
         temp.ownedAmount ??= 0;
@@ -110,7 +110,7 @@ abstract class _ApplicationStore with Store {
           }
         }
       });
-    });
+    }
 
     List<QubicAssetDto> result = [];
     result.addAll(shares);

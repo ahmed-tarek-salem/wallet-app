@@ -36,7 +36,7 @@ class _WBehindKeyboardState extends State<WBehindKeyboard> {
             child: IgnorePointer(ignoring: !visible, child: widget.child),
           )
         : Visibility(
-            child: IgnorePointer(ignoring: !visible, child: widget.child),
-            visible: visible);
+            visible: visible,
+            child: IgnorePointer(ignoring: !visible, child: widget.child));
   }
 }

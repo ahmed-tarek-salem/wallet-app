@@ -163,7 +163,7 @@ class _TabSettingsState extends State<TabSettings> {
       //Theme.of(context).cardTheme.color,
       settingsListBackground: LightThemeColors.background,
       dividerColor: Colors.transparent,
-      titleTextColor: Theme.of(context).colorScheme.onBackground,
+      titleTextColor: Theme.of(context).colorScheme.onSurface,
     );
 
     Widget getTrailingArrow() {

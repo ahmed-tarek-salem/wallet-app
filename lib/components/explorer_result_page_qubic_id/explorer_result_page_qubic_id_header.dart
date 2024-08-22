@@ -52,7 +52,7 @@ class ExplorerResultPageQubicIdHeader extends StatelessWidget {
         .textTheme
         .titleMedium!
         .copyWith(fontFamily: ThemeFonts.secondary);
-    return Container(
+    return SizedBox(
         width: double.infinity,
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           IPs != null

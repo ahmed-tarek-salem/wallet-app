@@ -109,7 +109,7 @@ class ExplorerResultPageTransactionItem extends StatelessWidget {
     return ThemedControls.card(
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         ExplorerTransactionStatusItem(item: transaction),
-        Container(
+        SizedBox(
             width: double.infinity,
             child: FittedBox(
                 fit: BoxFit.cover,

@@ -288,7 +288,7 @@ class IdListItem extends StatelessWidget {
           child: item.assets[key] != null
               ? QubicAsset(
                   key: ValueKey<String>(
-                      "qubicAsset${item.publicId}-${key}-${item.assets[key]}"),
+                      "qubicAsset${item.publicId}-$key-${item.assets[key]}"),
                   asset: item.assets[key]!,
                   style: Theme.of(context).textTheme.displaySmall!.copyWith(
                       fontWeight: FontWeight.normal,

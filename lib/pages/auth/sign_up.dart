@@ -102,8 +102,8 @@ class _ReceiveState extends State<SignUp> {
           child: Switch(
               activeColor: LightThemeColors.primary,
               activeTrackColor: LightThemeColors.buttonPrimary,
-              trackOutlineColor: MaterialStateProperty.resolveWith<Color?>(
-                  (Set<MaterialState> states) {
+              trackOutlineColor: WidgetStateProperty.resolveWith<Color?>(
+                  (Set<WidgetState> states) {
                 return Colors.orange.withOpacity(0);
               }),
               value: enabledBiometrics,

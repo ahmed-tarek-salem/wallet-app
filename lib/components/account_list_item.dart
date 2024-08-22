@@ -383,7 +383,7 @@ class _AccountListItemState extends State<AccountListItem> {
           child: widget.item.assets[key] != null
               ? AmountFormatted(
                   key: ValueKey<String>(
-                      "qubicAsset${widget.item.publicId}-${key}-${widget.item.assets[key]}"),
+                      "qubicAsset${widget.item.publicId}-$key-${widget.item.assets[key]}"),
                   amount: widget.item.assets[key]!.ownedAmount,
                   isInHeader: false,
                   labelOffset: -0,
