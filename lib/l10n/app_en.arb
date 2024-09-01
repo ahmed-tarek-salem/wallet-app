@@ -409,6 +409,8 @@
             }
         }
     },
+    "addAccountErrorVerifyIdentityWrongIdentity": "Invalid watch address. Please check your watch address input.",
+    "addAccountErrorVerifyIdentityError": "Unable to verify identity!",
     "addAccountErrorNameAlreadyInUse": "Name is already in use",
     "addAccountErrorPublicIDAlreadyInUse": "Public ID already in use",
     "addAccountDialogTitleMaxNumberOfAccountsReached": "Max accounts limit reached",
@@ -454,6 +456,7 @@
     "addAccountWarningSheetCheckboxLabel": "I understand the above",
     "deleteAccountDialogTitle": "Delete Account",
     "deleteAccountDialogMessage": "Are you sure you want to delete this Qubic Account from your wallet? (Any funds associated with this Account will not be removed)\n\nMAKE SURE YOU HAVE A BACKUP OF YOUR PRIVATE SEED BEFORE DELETING THIS ACCOUNT!",
+    "deleteAccountDialogMessageWatchOnly": "Are you sure you want to delete this Qubic Watch Only Account from your wallet?",
     "deleteAccountDialogButtonDelete": "Delete Account",
     "renameAccountDialogTitle": "Rename Account",
     "renameAccountLabelName": "Name",
@@ -681,6 +684,8 @@
         }
     },
     "importPrivateSeedDefaultAccountName": "Account 1",
+    "cmdErrorVerifyIdentityJsonDecoding": "Error when decode output of verifyIdentity",
+    "cmdErrorVerifyIdentityParsingError": "Error parsing output of verifyIdentity",
     "cmdErrorCreatingAssetTransferTransactionGeneric": "Error trying to create asset transfer transaction",
     "cmdErrorCreatingAssetTransferTransactionEmpty": "Error trying to create asset transfer transaction. Generated transaction was empty",
     "cmdErrorCreatingAssetTransferTransaction": "Error trying to create asset transfer transaction: {errorDescription}",
@@ -744,7 +749,17 @@
     },
     "generalErrorFileRequired": "Please select a file",
     "generalErrorPathRequired": "Please select a path",
-    "homeWarningTooManyAccounts": "You have more than 15 accounts in your wallet. You will not be able to transfer funds or view balances until you remove some so that you have 15 or fewer.",
     "explorerLabelPrice": "Price",
-    "explorerLabelMarketCap": "Market Cap"
+    "explorerLabelMarketCap": "Market Cap",
+    "homeWarningTooManyAccounts": "You have more than 15 accounts in your wallet. You will not be able to transfer funds or view balances until you remove some so that you have 15 or fewer.",
+    "cmdErrorVerifyingIdentityGeneric": "Error verifying the identity.",
+    "cmdErrorVerifyingIdentity": "Cannot verify your identity: {errorDescription}",
+    "@cmdErrorVerifyingIdentity": {
+        "placeholders": {
+            "errorDescription": {
+                "type": "String"
+            }
+        }
+    },
+    "addAccountInvalidWatchOnlyId": "Invalid Watch Only Address!"
 }
