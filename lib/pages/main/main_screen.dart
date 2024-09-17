@@ -92,8 +92,6 @@ class _MainScreenState extends State<MainScreen> with WidgetsBindingObserver {
       backgroundColor: Colors.transparent,
     );
 
-    _timedController.setupFetchTimer(true);
-    _timedController.setupSlowTimer(true);
     _controller = PersistentTabController(initialIndex: widget.initialTabIndex);
     // _controller.jumpToTab(value);
     _controller.addListener(() {
